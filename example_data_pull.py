@@ -1,7 +1,9 @@
 import sqlite3
 import pandas as pd
 
-df = pd.read_csv("lyrics.csv")
+DATA_DIR = "../data/"
+
+df = pd.read_csv(DATA_DIR+"lyrics.csv")
 
 df_queen = df[df['Band']=='Queen']
 
@@ -15,21 +17,23 @@ print(df_queen['Song'].values)
 #  'Under Pressure [Maimmarktgelände, Mannheim, Germany, 21st June 1986]']
 
 
+## track_metadata.db: contains meatadata for 1 million songs. Some not well titled
+##                 http://millionsongdataset.com/pages/example-track-description/
 def query_metadata(qs):
-    conn_metadata = sqlite3.connect("./db/track_metadata.db")
-    result = conn_metadata.execute(qs).fetchall()
-    conn_metadata.close()
+    conn = sqlite3.connect(DATA_DIR+"track_metadata.db")
+    result = conn.execute(qs).fetchall()
+    conn.close()
 
     return result
 
 ## mxm_dataset.db: The database below contains 270K+ songs with lyrics but they are
 ##                 prestemmed and are almost unrecognizable "pretty" -> "pretti"
-conn = sqlite3.connect("./db/mxm_dataset.db")
+def query_metadata(qs):
+    conn = sqlite3.connect(DATA_DIR+"/mxm_dataset.db")
+    result = conn.execute(qs).fetchall()
+    conn.close()
 
-## track_metadata.db: contains meatadata for 1 million songs. Some not well titled
-##                 http://millionsongdataset.com/pages/example-track-description/
-conn_metadata = sqlite3.connect("./db/track_metadata.db")
-
+    return result
 
 query_metadata("SELECT artist_name, title, year FROM songs WHERE artist_name = 'Queen'")
 #############--------------SAMPLE_RESULTS--------------#############
