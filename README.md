@@ -1,7 +1,7 @@
 # dva-song-project
 Class Project for OMSA CS 6242 utilizing Million Song Dataset to Visualize song topics over time
 
-The datasets for this project are too large for free version control so you'll have to download to your local yourself. Download them all to the same location and call the folder something reasonable (jk call it fruits if you want). To avoid accidentally committing them from your local I provided a path variable at the top of the `example_data_pull.py` file. Set your relative path ex. `../../fruits/` and that will represent your data folder.
+The datasets for this project are too large for free version control so you'll have to download to your local. Download them all to the same location and call the folder something reasonable (jk call it fruits if you want). To avoid accidentally committing them from your local I provided a path variable at the top of the `example_data_pull.py` file. Set your relative path ex. `../../fruits` or like me `../data/` and that will represent your data folder.
 
 Million Song Dataset
 1. track_metadata.db: http://millionsongdataset.com/sites/default/files/AdditionalFiles/track_metadata.db
