@@ -28,7 +28,7 @@ def query_metadata(qs):
 
 ## mxm_dataset.db: The database below contains 270K+ songs with lyrics but they are
 ##                 prestemmed and are almost unrecognizable "pretty" -> "pretti"
-def query_metadata(qs):
+def query_mxmdataset(qs):
     conn = sqlite3.connect(DATA_DIR+"/mxm_dataset.db")
     result = conn.execute(qs).fetchall()
     conn.close()
