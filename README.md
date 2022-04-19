@@ -9,4 +9,4 @@ INSTALLATION -
   4. Run all cells of the notebook to overwrite files in the `/output` folder. 
 
 EXECUTION - How to run a demo on your code
-  4. <insert D3 instructions> 
+  4. -insert D3 instructions-
