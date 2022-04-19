@@ -1,13 +1,11 @@
 # dva-song-project
-Class Project for OMSA CS 6242 utilizing Million Song Dataset to Visualize song topics over time
+Class Project for OMSA CS 6242 utilizing Million Song Dataset to Visualize word meaning over time
 
-The datasets for this project are too large for free version control so you'll have to download to your local. Download them all to the same location and call the folder something reasonable (jk call it fruits if you want). To avoid accidentally committing them from your local I provided a path variable at the top of the `example_data_pull.py` file. Set your relative path ex. `../../fruits` or like me `../data/` and that will represent your data folder.
+DESCRIPTION - Row 175's Course Project visualizing changes in lyrics over time. This project consists of raw and processed data used in the D3 visualizations. 
+INSTALLATION - 
+  1. Download repo
+  2. Locate `/notebooks/CSE6242 - Lyric Project.ipynb` and open the notebook using your local Jupyter Notebook installation.
+  3. Run all cells of the notebook to overwrite files in the `/output` folder. 
 
-Million Song Dataset
-1. track_metadata.db: http://millionsongdataset.com/sites/default/files/AdditionalFiles/track_metadata.db
-2. mxm_dataset.db: http://millionsongdataset.com/sites/default/files/AdditionalFiles/mxm_dataset.db
-
-You'll also need to download this file. This is where we'll get the lyrics:
-https://bigml.com/user/czuriaga/gallery/dataset/5a9e785c92fb563a5d000ff6
-
-There are like 500K+ song lyrics there. Some of those may not be in the 1million song dataset though and thus we won't be able to associate a year with the lyrics. 
+EXECUTION - How to run a demo on your code
+  4. <insert D3 instructions> 
